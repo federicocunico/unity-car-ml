@@ -10,7 +10,7 @@ public class TileColor : MonoBehaviour
     private Renderer _renderer;
     private List<Collider> _collidedObjects = new List<Collider>();
 
-    private void Start()
+    private void Awake()
     {
         _renderer = GetComponent<Renderer>();
     }
