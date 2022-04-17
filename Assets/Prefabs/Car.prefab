@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 389086090673174092}
   - component: {fileID: 8101912764270421538}
   - component: {fileID: 911421749517807182}
-  - component: {fileID: 1893403527281358501}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -82,19 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1893403527281358501
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622246362845343812}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2032508342812690502
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +221,6 @@ GameObject:
   - component: {fileID: 3931521536678876089}
   - component: {fileID: 4818299306724692791}
   - component: {fileID: 3171530804537754452}
-  - component: {fileID: 2598449136467868581}
   m_Layer: 0
   m_Name: WheelBR
   m_TagString: Untagged
@@ -306,19 +291,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2598449136467868581
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3662434912320601842}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5211930449463099726
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +302,6 @@ GameObject:
   - component: {fileID: 7352913304892814713}
   - component: {fileID: 7613334497933628200}
   - component: {fileID: 3560262544132777538}
-  - component: {fileID: 7828112137494512364}
   m_Layer: 0
   m_Name: WheelBL
   m_TagString: Untagged
@@ -401,19 +372,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7828112137494512364
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5211930449463099726}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5413747990602182043
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +383,6 @@ GameObject:
   - component: {fileID: 5108287668399358441}
   - component: {fileID: 1002779674951126494}
   - component: {fileID: 5563608695525999719}
-  - component: {fileID: 5161043361928699847}
   m_Layer: 0
   m_Name: WheelFR
   m_TagString: Untagged
@@ -496,19 +453,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5161043361928699847
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5413747990602182043}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5419964586456414272
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +464,6 @@ GameObject:
   - component: {fileID: 3753257355028871059}
   - component: {fileID: 3672330555721514824}
   - component: {fileID: 8861215173091745315}
-  - component: {fileID: 5293846178035293908}
   m_Layer: 0
   m_Name: WheelFL
   m_TagString: Untagged
@@ -591,19 +534,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5293846178035293908
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5419964586456414272}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6651406124919901982
 GameObject:
   m_ObjectHideFlags: 0

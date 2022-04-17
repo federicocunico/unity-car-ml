@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
@@ -21,6 +19,8 @@ public class DriveAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
+        //Debug.Log("Observing");
+
         // Cosa vede l'IA; nei fatti l'input della rete neurale.
         // Parametro che li regola è: Vector Observation>Space size
         sensor.AddObservation(transform.localPosition);
@@ -44,10 +44,16 @@ public class DriveAgent : Agent
         //    Debug.Log(discreteActions[i]);
         //}
 
+        //Debug.Log("Applying movement");
+
         float moveX = actions.ContinuousActions[0];
         float moveZ = actions.ContinuousActions[1];
 
         transform.localPosition += new Vector3(moveX, 0, moveZ) * Time.deltaTime * MoveSpeed;
+
+        var dst = (transform.localPosition - Goal.localPosition).sqrMagnitude;
+        AddReward(-dst);
+
     }
 
     public override void OnEpisodeBegin()
@@ -68,16 +74,18 @@ public class DriveAgent : Agent
 
     private void OnTriggerEnter(Collider other)
     {
+        //var dst = (transform.localPosition - Goal.localPosition).sqrMagnitude;
         if (other.TryGetComponent<Goal>(out Goal goal))
         {
             Debug.Log("Goal reached!!!");
-            SetReward(1f);
+            SetReward(10000);
         }
         else
         {
-            AddReward(-1f);
+            AddReward(-10000);
         }
         EndEpisode();  // serve a finire l'episodio e quindi resettare
     }
 
 }
+

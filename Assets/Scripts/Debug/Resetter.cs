@@ -5,11 +5,12 @@ using UnityEngine;
 public class Resetter : MonoBehaviour
 {
     public Transform ResetDestination = null;
+    public float MaxDepth = -100f;
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -500)
+        if (transform.position.y < MaxDepth)
         {
             if (ResetDestination)
             {
